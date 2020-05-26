@@ -1,4 +1,4 @@
-// Assignment Code
+// Creating password variables to be randomly selected...
 var generateBtn = document.querySelector("#generate");
 var lowercasevariables = "abcdefghijklmnopqrstuvwxyz";
 var uppercasevariables = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
@@ -9,10 +9,12 @@ var specialcharactervariables = "!#$%&'()*+,-./:;<=>?@[]^_'{}|~";
 // Write password to the #password input
 function writePassword() {
 
-  // user prompts to determine what they want to include in their password....
+  // user prompts to determine how many characters they want to include in their password. 
   var numcharacters = prompt("How many characters do you want to include? (Enter a number between 8 and 128");
   var notadecimal = numcharacters.toString(); 
 
+// if statement makes sure their numcharacters input is an integer and is not a decimal..
+// prompts user to select what other characters they want in their password
   if (numcharacters <= 128 && numcharacters >= 8 && notadecimal.indexOf(".") ===-1) {
     var lowercaseprompt = confirm("Do you want to include lowercase characters?");
     var uppercaseprompt = confirm("Do you want to include uppercase characters?");
