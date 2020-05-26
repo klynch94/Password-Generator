@@ -22,6 +22,7 @@ function writePassword() {
     var specialcharactersprompt = confirm("Do you want to include special characters?");
     var passwordcriteria = [];
 
+    // for loop to generate characters based on user inputs
       for (var i = 0; i < numcharacters; i++) {
         if (specialcharactersprompt) {
           var numspecial = Math.floor(Math.random() * 33);
@@ -43,6 +44,8 @@ function writePassword() {
           passwordcriteria.push(numericvariables[numnumeric]);
         }
       }
+
+    // randomizing characters, making array into string, and slicing string to # of characters user wanted..
     passwordcriteria.sort(() => Math.random() - 0.5);
     var password = passwordcriteria.join("");
     var passwordText = document.querySelector("#password");
@@ -56,6 +59,6 @@ function writePassword() {
   }
 }
 
-// Add event listener to generate button
+// Add event listener to generate button and run the function..
 generateBtn.addEventListener("click", writePassword);
  
