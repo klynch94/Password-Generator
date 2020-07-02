@@ -23,3 +23,5 @@ THEN the password is either displayed in an alert or written to the page
 Below is a screenshot of the generator...
 
 <img src="03-javascript-homework-demo.png">
+
+Link to deployed application: https://klynch94.github.io/Password-Generator/
